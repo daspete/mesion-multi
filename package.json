@@ -1,6 +1,43 @@
 {
   "name": "mesion-multi",
+  "description": "Mongodb Express SocketIO Nuxt stack",
+  "author": "daspete <daspetemail@gmail.com> (github.com/daspete)",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "dev": "backpack dev",
+    "build": "backpack build",
+    "db:seed": "BACKPACK_ENV=seeder backpack build; node ./build/tools/seeder/main.js"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.5.4",
+    "backpack-core": "^0.8.3",
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.3.1",
+    "commander": "^2.20.0",
+    "compression": "^1.7.4",
+    "cookieparser": "^0.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "express-cache-headers": "^0.1.4",
+    "find": "^0.3.0",
+    "helmet": "^3.18.0",
+    "js-cookie": "^2.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.5.13",
+    "mongoose-autopopulate": "^0.9.1",
+    "mongoose-delete": "^0.5.0",
+    "morgan": "^1.9.1",
+    "node-sass": "^4.12.0",
+    "nuxt": "^2.8.1",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "sass-loader": "^7.1.0",
+    "socket.io": "^2.2.0",
+    "vue-socket.io-extended": "^3.2.1"
+  }
 }
